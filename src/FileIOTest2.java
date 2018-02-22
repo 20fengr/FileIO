@@ -4,7 +4,7 @@ import java.io.IOException;
  
 import java.util.Scanner;
  
-public class FileIOTest {
+public class FileIOTest2 {
  
   public static void main(String[] args) throws IOException{
  
