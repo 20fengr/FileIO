@@ -1,11 +1,15 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Test {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
 		System.out.println("File");
 		int sum=0;
 		Scanner input = new Scanner(System.in);
-		Scanner fileScan = new Scanner(input.nextLine());
+		String file= new String(input.nextLine());
+		File fileName = new File(file);
+		Scanner fileScan = new Scanner(fileName);
 		while (fileScan.hasNext()) {
 			sum+=fileScan.nextInt();
 		}
