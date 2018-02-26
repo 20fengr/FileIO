@@ -17,8 +17,8 @@ public static void main (String [] args) throws IOException{
 	fileName.close();
 	System.out.println("Sum: " + sum);
 	System.out.println("Every 5th Integer");
-	for (int j = 0; j < Every5th.size(); j +=5) {
-		System.out.println(j);
+	for (int k = 0; k < Every5th.size(); k +=5) {
+		System.out.println(k);
 	}
 	
 }
