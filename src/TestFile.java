@@ -28,5 +28,18 @@ public class TestFile {
 		System.out.println("Inputs: " + inputs);
 		System.out.println("Evens: " + evens);
 		System.out.println("Odds: " + odds);
+		
+		sum = 0;
+		ArrayList <Integer> Every5th = new ArrayList <Integer>();
+		while (fileScan.hasNext()) {
+			sum += fileScan.nextInt();
+			Every5th.add(fileScan.nextInt());
+		}
+		fileScan.close();
+		System.out.println("Sum: " + sum);
+		System.out.println("Every 5th Integer");
+		for (int k = 0; k < Every5th.size(); k +=5) {
+			System.out.println(k);
+		}
 	}
 }
